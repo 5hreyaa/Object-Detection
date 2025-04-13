@@ -1,0 +1,35 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.drop-zone {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e9ecef;
+    transition: background-color 0.3s;
+}
+
+.drop-zone:hover {
+    background-color: #d3d4d5;
+}
+
+#resultImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+#resultReport {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#resultImage, #resultReport, #visualization {
+    animation: fadeIn 1s;
+}
